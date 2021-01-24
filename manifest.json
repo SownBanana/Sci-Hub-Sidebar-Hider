@@ -1,7 +1,7 @@
 {
     "name": "Sci-Hub Sidebar Hider",
     "description": "Hide Sci-hub sidebar",
-    "version": "1.0",
+    "version": "1.1",
     "browser_action": {
         "default_icon": "icon.png"
     },
@@ -9,7 +9,11 @@
         "https://sci-hub.se/"
     ],
     "content_scripts": [{
-        "matches": ["https://sci-hub.se/*"],
+        "matches": ["https://sci-hub.se/*",
+            "https://sci-hub.do/*",
+            "https://sci-hub.ren/*",
+            "https://sci-hub.st/*"
+        ],
         "js": ["content.js"]
     }],
     "manifest_version": 2
