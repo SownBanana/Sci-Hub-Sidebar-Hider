@@ -1,0 +1,1 @@
+Hide the annoying sidebar of the Sci-hub page
